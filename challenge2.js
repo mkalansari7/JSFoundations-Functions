@@ -41,7 +41,7 @@ isOdd(99);
  * oddsSmallerThan(15) -> 7
  */
 function oddsSmallerThan(n) {
-  return Math.round(n / 2);
+  return Math.floor(n / 2);
   
 }
 oddsSmallerThan(10);
@@ -57,11 +57,12 @@ oddsSmallerThan(10);
  * squareOrDouble(9) -> 81
  */
 function squareOrDouble(n) {
-  if (n % === 0) {
+  if (n % 2 === 0) {
     return n * 2;
   } else {
     return n * n;
   }
 }
+squareOrDouble(9);
 
 module.exports = { greet, isOdd, oddsSmallerThan, squareOrDouble };
