@@ -60,7 +60,7 @@ function squareOrDouble(n) {
   if (n % === 0) {
     return n * 2;
   } else {
-    return math
+    return n * n;
   }
 }
 
